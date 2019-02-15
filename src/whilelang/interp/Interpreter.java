@@ -130,12 +130,12 @@ public class Interpreter implements Visitor<Integer>{
 
 	public Integer visit(Neg n) {
 		// TODO Implement this!
-		return -n.accept(this);
+		return -n.expr.accept(this);
 	}
 
 	public Integer visit(Not n) {
 		// TODO Implement this!
-		if(n.accept(this) == 1){
+		if(n.expr.accept(this) == 1){
 			return 0;
 		}else {
 			return 1;

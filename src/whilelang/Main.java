@@ -27,5 +27,18 @@ class Main {
     	Programs.squares.accept(ip);
     	Programs.collatz.accept(ip);
     	Programs.sums.accept(ip);
+
+    	// samples
+//		System.out.println("############## Sample programs: ##############");
+//		System.out.println("############## Sample: ##############");
+//		System.out.println(Programs.sample.accept(tp));
+//		System.out.println("############## Sample1: ##############");
+//		System.out.println(Programs.sample1.accept(tp));
+//		System.out.println("############## Sample2: ##############");
+//		System.out.println(Programs.sample2.accept(tp));
+		// interpret
+//		Programs.sample.accept(ip);
+//		Programs.sample1.accept(ip);
+//		Programs.sample2.accept(ip);
     }
 }
