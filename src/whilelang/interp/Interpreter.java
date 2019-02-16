@@ -70,7 +70,7 @@ public class Interpreter implements Visitor<Integer>{
 
 	public Integer visit(Var n) {
 		// TODO Implement this!
-		return variables.get(n.varID);
+		return variables.getOrDefault(n.varID, 0);
 	}
 
 	public Integer visit(IntLiteral n) {

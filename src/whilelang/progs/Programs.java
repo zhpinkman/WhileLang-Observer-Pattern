@@ -72,4 +72,14 @@ public class Programs {
 							new Assign("i", new Plus(new Var("i"), new IntLiteral(1))),
 							new Print("viva while and a is ", "a"))))),
 			new Print("i is ", "i"))));
+
+	public static Statement sampleFayyaz = new Block(new ArrayList<Statement>(Arrays.asList(
+			new Assign("i", new IntLiteral(-2)),
+			new For(new Assign("a", new IntLiteral(0)),
+					new Or(new GreaterThan(new Var("a"), new IntLiteral(-5)), new Equals(new Var("a"), new IntLiteral(-5))),
+					new Assign("a", new Minus(new Var("a"), new IntLiteral(1))),
+					new Block(new ArrayList<Statement>(Arrays.asList(
+							new Assign("i", new Plus(new Var("i"), new IntLiteral(1))),
+							new Print("viva while and a is ", "vv"))))),
+			new Print("i is ", "i"))));
 }

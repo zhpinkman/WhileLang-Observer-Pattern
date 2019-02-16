@@ -24,9 +24,9 @@ class Main {
     	System.out.println(Programs.sums.accept(ts).accept(tp));
     	// interpret
     	Visitor<Integer> ip = new Interpreter();
-    	Programs.squares.accept(ip);
-    	Programs.collatz.accept(ip);
-    	Programs.sums.accept(ip);
+//    	Programs.squares.accept(ip);
+//    	Programs.collatz.accept(ip);
+//    	Programs.sums.accept(ip);
 
     	// samples
 //		System.out.println("############## Sample programs: ##############");
@@ -36,9 +36,11 @@ class Main {
 //		System.out.println(Programs.sample1.accept(tp));
 //		System.out.println("############## Sample2: ##############");
 //		System.out.println(Programs.sample2.accept(tp));
+//		System.out.println(Programs.sampleFayyaz.accept(tp));
 		// interpret
 //		Programs.sample.accept(ip);
 //		Programs.sample1.accept(ip);
 //		Programs.sample2.accept(ip);
+//		Programs.sampleFayyaz.accept(ip);
     }
 }
